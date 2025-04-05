@@ -12,10 +12,11 @@
             "description": "token to auto-download EOS images from arista.com."
             // "documentationUrl": "https://example.com/link/to/info"
         }
+    },
     "hostRequirements": {
         "cpus": 4,
         "memory": "16gb",
-        "storage": "32gb"       
+        "storage": "32gb"
     },
     "postCreateCommand": "postCreate.sh; make start; make inspect",
     "workspaceMount": "source=${localWorkspaceFolder}/labs/${containerWorkspaceFolder},target=/${containerWorkspaceFolder},type=bind",
